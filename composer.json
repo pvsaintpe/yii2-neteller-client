@@ -1,0 +1,36 @@
+{
+  "name": "pvsaintpe/yii2-neteller-client",
+  "description": "Package",
+  "keywords": [
+    "yii2",
+    "payment",
+    "neteller",
+    "api"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Veselov",
+      "email": "pvsaintpe@icloud.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "yiisoft/yii2": "2.0.16.1",
+    "pvsaintpe/yii2-helpers": "*",
+    "phpdocumentor/reflection": "*",
+    "codeception/codeception": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "pvsaintpe\\neteller\\": ""
+    }
+  },
+  "config": {
+    "fxp-asset.installer-paths": {
+        "npm-asset-library": "vendor/npm",
+        "bower-asset-library": "vendor/bower"
+    }
+  }
+}
