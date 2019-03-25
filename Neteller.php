@@ -169,11 +169,13 @@ class Neteller extends Component
             throw new Exception(Yii::t('errors', 'Ошибка подключения'));
         }
 
-        return $this->getResponse(
+        $this->lastResponse =  $this->getResponse(
             '/v1/transferIn',
             false,
             $request
         );
+
+        return $this->extractTransaction();
     }
 
     /**
