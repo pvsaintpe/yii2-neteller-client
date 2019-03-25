@@ -1,6 +1,6 @@
 <?php
 
-namespace common\components\payment;
+namespace pvsaintpe\neteller;
 
 use yii\base\Exception;
 use yii\base\Component;
@@ -8,7 +8,7 @@ use Yii;
 
 /**
  * Class Neteller
- * @package common\components\payment
+ * @package pvsaintpe\neteller
  */
 class Neteller extends Component
 {
